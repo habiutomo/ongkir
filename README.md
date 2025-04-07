@@ -171,5 +171,5 @@ Kami menerima kontribusi untuk pengembangan OngkirCalculator! Silakan fork repos
 
 ## Kontak
 
-- Email: hello@ongkircalculator.id
+- Email: habizinnia@gmail.com
 - Website: https://ongkircalculator.id
