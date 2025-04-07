@@ -1,0 +1,283 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Indonesian Shipping Cost Calculator API</h1>
+                <p class="lead">Integrate accurate shipping costs from multiple couriers directly into your e-commerce platform or application.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                    <a href="/docs" class="btn btn-primary btn-lg px-4 me-md-2">View Documentation</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn btn-outline-light btn-lg px-4">Get API Key</a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="text-center">
+                    <i class="bi bi-truck display-1 text-primary mb-4"></i>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                        <span class="badge bg-secondary">JNE</span>
+                        <span class="badge bg-secondary">TIKI</span>
+                        <span class="badge bg-secondary">POS Indonesia</span>
+                        <span class="badge bg-secondary">J&T</span>
+                        <span class="badge bg-secondary">SiCepat</span>
+                        <span class="badge bg-secondary">AnterAja</span>
+                        <span class="badge bg-secondary">Wahana</span>
+                        <span class="badge bg-secondary">Ninja Xpress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold">Key Features</h2>
+                <p class="lead">OngkirCalculator provides everything you need to integrate shipping costs into your platform.</p>
+            </div>
+        </div>
+        <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-box-seam text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Multiple Couriers</h3>
+                        <p>Get shipping costs from all major Indonesian couriers including JNE, TIKI, POS Indonesia, J&T, SiCepat, and more in a single API call.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-calculator text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Accurate Calculations</h3>
+                        <p>Precise shipping cost calculations based on origin, destination, weight, and courier service type.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-code-slash text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Easy Integration</h3>
+                        <p>Simple RESTful API with comprehensive documentation makes integration quick and easy for developers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-clock-history text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Delivery Estimates</h3>
+                        <p>Get estimated delivery times for all shipping options to provide customers with complete information.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-speedometer2 text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Fast Performance</h3>
+                        <p>Optimized API with quick response times to ensure your checkout process stays fast and efficient.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="feature-icon bg-primary bg-gradient mb-3">
+                            <i class="bi bi-shield-check text-light display-6 p-2"></i>
+                        </div>
+                        <h3 class="fs-5 fw-bold">Reliable Service</h3>
+                        <p>Built with reliability in mind, our API offers high uptime and consistent performance you can depend on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Supported Couriers -->
+<section class="py-5 bg-dark">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold">Supported Couriers</h2>
+                <p class="lead">We support all major courier services operating in Indonesia</p>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-10">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>JNE</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>TIKI</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>POS Indonesia</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>J&T Express</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>SiCepat</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>AnterAja</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>Wahana</p>
+                    </div>
+                    <div class="text-center m-3">
+                        <i class="bi bi-box-seam display-4"></i>
+                        <p>Ninja Xpress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold">How It Works</h2>
+                <p class="lead">Integrating shipping costs into your application is simple</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                    <h3 class="m-0 text-white">1</h3>
+                </div>
+                <h4>Register for API Key</h4>
+                <p>Sign up to receive your unique API key for accessing the shipping cost calculation service.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                    <h3 class="m-0 text-white">2</h3>
+                </div>
+                <h4>Integrate API</h4>
+                <p>Use our documentation to implement the API in your website or application.</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="bg-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                    <h3 class="m-0 text-white">3</h3>
+                </div>
+                <h4>Display Shipping Options</h4>
+                <p>Show your customers accurate shipping costs and delivery estimates during checkout.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card bg-dark">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Sample API Request</h5>
+                        <div class="api-example">
+                            <span class="method post">POST</span>
+                            <span class="endpoint">/api/cost</span>
+                            <pre>{
+  "origin": 501,
+  "destination": 114,
+  "weight": 1000,
+  "courier": "jne"
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="py-5" id="pricing">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold">Simple Pricing</h2>
+                <p class="lead">Choose the plan that fits your business needs</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">Rp0<small class="text-muted fw-light">/month</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>100 API requests/day</li>
+                            <li>Basic courier support</li>
+                            <li>Standard response time</li>
+                            <li>Community support</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary pricing-card">
+                    <div class="card-header py-3 text-white bg-primary">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">Rp299k<small class="text-muted fw-light">/month</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10,000 API requests/day</li>
+                            <li>All courier services</li>
+                            <li>Priority response time</li>
+                            <li>Email support</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm pricing-card">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">Custom<small class="text-muted fw-light">/month</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Unlimited API requests</li>
+                            <li>All courier services</li>
+                            <li>Dedicated infrastructure</li>
+                            <li>24/7 phone & email support</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
